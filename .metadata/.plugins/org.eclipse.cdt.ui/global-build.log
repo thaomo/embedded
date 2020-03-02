@@ -239,3 +239,27 @@ arm-none-eabi-size   lab11.elf
   45392	    152	   4248	  49792	   c280	lab11.elf
 Finished building: default.size.stdout
  
+17:14:14 **** Incremental Build of configuration Debug for project lab11 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F413xx -DDEBUG -c -I../USB_HOST/App -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Core/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../USB_HOST/Target -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "lab11.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\yangz\Downloads\New folder\embedded\lab11\STM32F413ZHTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab11.elf
+ 
+arm-none-eabi-objdump -h -S  lab11.elf  > "lab11.list"
+arm-none-eabi-objcopy  -O binary  lab11.elf  "lab11.bin"
+arm-none-eabi-size   lab11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  45400	    152	   4248	  49800	   c288	lab11.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab11.bin
+ 
+Finished building: lab11.list
+ 
+17:14:25 **** Incremental Build of configuration Debug for project lab11 ****
+make -j4 all 
+arm-none-eabi-size   lab11.elf 
+   text	   data	    bss	    dec	    hex	filename
+  45400	    152	   4248	  49800	   c288	lab11.elf
+Finished building: default.size.stdout
+ 
