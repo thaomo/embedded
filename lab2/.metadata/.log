@@ -1,0 +1,55 @@
+!SESSION 2020-04-05 19:20:36.929 -----------------------------------------------
+eclipse.buildId=Version 1.3.0
+java.version=1.8.0_242
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2020-04-05 19:21:25.313
+!MESSAGE Log4j initialized with config file H:\Embedded(2020)\Assignment3_Lab2\embedded\lab2\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2020-04-05 19:21:27.922
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2020-04-05 19:21:28.296
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-04-05 19:24:49.116
+!MESSAGE Indexed 'lab2' (0 sources, 0 headers) in 0.004 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-04-05 19:24:55.195
+!MESSAGE Indexed 'lab2' (20 sources, 26 headers) in 2.96 sec: 2,135 declarations; 14,746 references; 4 unresolved inclusions; 47 syntax errors; 2,313 unresolved names (12%)
+!SESSION 2020-04-16 18:55:55.622 -----------------------------------------------
+eclipse.buildId=Version 1.3.0
+java.version=1.8.0_242
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  H:\Embedded(2020)\Assignment3_Lab2\embedded\lab2\lab2\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 H:\Embedded(2020)\Assignment3_Lab2\embedded\lab2\lab2\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2020-04-16 18:56:17.362
+!MESSAGE Log4j initialized with config file H:\Embedded(2020)\Assignment3_Lab2\embedded\lab2\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2020-04-16 18:56:31.479
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2020-04-16 18:56:34.509
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-04-16 18:56:43.985
+!MESSAGE Indexed 'lab2' (21 sources, 98 headers) in 8.81 sec: 7,141 declarations; 26,932 references; 2 unresolved inclusions; 29 syntax errors; 146 unresolved names (0.43%)
+!SESSION 2020-04-22 18:10:27.324 -----------------------------------------------
+eclipse.buildId=Version 1.3.0
+java.version=1.8.0_242
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2020-04-22 18:10:49.921
+!MESSAGE Log4j initialized with config file H:\Embedded(2020)\Assignment3_Lab2\embedded\lab2\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2020-04-22 18:11:04.645
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2020-04-22 18:11:04.794
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
