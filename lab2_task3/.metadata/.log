@@ -1,0 +1,40 @@
+!SESSION 2020-04-25 22:09:26.155 -----------------------------------------------
+eclipse.buildId=Version 1.3.0
+java.version=1.8.0_242
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2020-04-25 22:09:38.059
+!MESSAGE Log4j initialized with config file H:\Embedded(2020)\Assignment3_Lab2\embedded\lab2_task3\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2020-04-25 22:09:40.901
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2020-04-25 22:09:41.537
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-04-25 22:11:05.076
+!MESSAGE Indexed 'lab2_task3' (0 sources, 0 headers) in 0.002 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-04-25 22:11:17.205
+!MESSAGE Indexed 'lab2_task3' (23 sources, 81 headers) in 6.31 sec: 4,289 declarations; 20,172 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+!SESSION 2020-04-25 22:48:54.265 -----------------------------------------------
+eclipse.buildId=Version 1.3.0
+java.version=1.8.0_242
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  H:\Embedded(2020)\Assignment3_Lab2\embedded\lab2_task3\lab2_task3\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 H:\Embedded(2020)\Assignment3_Lab2\embedded\lab2_task3\lab2_task3\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2020-04-25 22:49:09.525
+!MESSAGE Log4j initialized with config file H:\Embedded(2020)\Assignment3_Lab2\embedded\lab2_task3\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2020-04-25 22:49:14.157
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2020-04-25 22:49:15.536
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-04-25 22:49:20.312
+!MESSAGE Indexed 'lab2_task3' (22 sources, 46 headers) in 4.97 sec: 5,699 declarations; 23,039 references; 28 unresolved inclusions; 280 syntax errors; 5,660 unresolved names (16%)
