@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics.
+  * <h2><center>&copy; Copyright (c) 2019 STMicroelectronics.
   * All rights reserved.</center></h2>
   *
   * This software component is licensed by ST under BSD 3-Clause license,
@@ -34,6 +34,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -44,27 +45,8 @@
 /* Private variables ---------------------------------------------------------*/
 UART_HandleTypeDef huart2;
 
-/* Definitions for defaultTask */
-osThreadId_t defaultTaskHandle;
-const osThreadAttr_t defaultTask_attributes = {
-  .name = "defaultTask",
-  .priority = (osPriority_t) osPriorityNormal,
-  .stack_size = 128 * 4
-};
-/* Definitions for blink01 */
 osThreadId_t blink01Handle;
-const osThreadAttr_t blink01_attributes = {
-  .name = "blink01",
-  .priority = (osPriority_t) osPriorityLow,
-  .stack_size = 128 * 4
-};
-/* Definitions for blink02 */
 osThreadId_t blink02Handle;
-const osThreadAttr_t blink02_attributes = {
-  .name = "blink02",
-  .priority = (osPriority_t) osPriorityBelowNormal1,
-  .stack_size = 128 * 4
-};
 /* USER CODE BEGIN PV */
 
 /* USER CODE END PV */
@@ -73,7 +55,6 @@ const osThreadAttr_t blink02_attributes = {
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
-void StartDefaultTask(void *argument);
 void StartBlink01(void *argument);
 void StartBlink02(void *argument);
 
@@ -95,6 +76,7 @@ int main(void)
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
+
 
   /* MCU Configuration--------------------------------------------------------*/
 
@@ -119,7 +101,6 @@ int main(void)
 
   /* USER CODE END 2 */
 
-  /* Init scheduler */
   osKernelInitialize();
 
   /* USER CODE BEGIN RTOS_MUTEX */
@@ -139,13 +120,20 @@ int main(void)
   /* USER CODE END RTOS_QUEUES */
 
   /* Create the thread(s) */
-  /* creation of defaultTask */
-  defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
-
-  /* creation of blink01 */
+  /* definition and creation of blink01 */
+  const osThreadAttr_t blink01_attributes = {
+    .name = "blink01",
+    .priority = (osPriority_t) osPriorityNormal,
+    .stack_size = 128
+  };
   blink01Handle = osThreadNew(StartBlink01, NULL, &blink01_attributes);
 
-  /* creation of blink02 */
+  /* definition and creation of blink02 */
+  const osThreadAttr_t blink02_attributes = {
+    .name = "blink02",
+    .priority = (osPriority_t) osPriorityBelowNormal,
+    .stack_size = 128
+  };
   blink02Handle = osThreadNew(StartBlink02, NULL, &blink02_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
@@ -156,6 +144,7 @@ int main(void)
   osKernelStart();
 
   /* We should never get here as control is now taken by the scheduler */
+
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
